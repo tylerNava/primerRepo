@@ -10,3 +10,4 @@
 - # 3 para primera vez usar el git push -u origin main (MASTER) se el caso (solo se realiza una solavez);   el git push (para publicarlo en el repositorio)
 - # 4 git pull es para bajar los cambios (actualizar los cambios realizados por el team y para uno estar sincronizados)
 - nos que damos en el miniuto 01:30:00 de jhon con el tema para repositorios nuevos 😎
+- nuevo dia 21/11/2922 07:08 am vamos hacer modificaciones en la web y lo podimos en la terminanl 👍
