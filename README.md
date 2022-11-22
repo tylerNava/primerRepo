@@ -14,3 +14,17 @@
 - nuevo dia 21/11/2922 07:08 am vamos hacer modificaciones en la web y lo podimos en la terminanl 👍
 
 -vamos a crear varios branch (ramas) para moverse entre ellos los que sean necesarios y claro los pasos a seguir por cada uno de ellos  comenzamos.
+******************
+- (ramaA) es un ejemplo de los nombres.
+- para crear ramas 
+- 1 git checkout -b ramaA(nombreAcolocar)
+ 
+  - git branch # cuantas ramas existe
+  
+ - git branch -D (ramaA)  # elimina el la rama  FORZADO
+
+ - git branch -d (ramaA)  # elimina el la rama  NO forzado
+
+ -  git push origin --delete ramaA # para eliminarlo remotamente en caso que ya se halla subido a la web
+
+  - git checkout ramaA # para moverse entre ramas
