@@ -1,0 +1,1 @@
+hemos creado un nuevo archivo de texto en la consola , y haciendo el uso de ramas en este momento estoy en newBrach vamos a guardar los cambios 
