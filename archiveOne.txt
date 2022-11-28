@@ -1,1 +1,7 @@
-hemos creado un nuevo archivo de texto en la consola , y haciendo el uso de ramas en este momento estoy en newBrach vamos a guardar los cambios 
+hemos creado un nuevo archivo de texto en la consola , y haciendo el uso de ramas en este momento estoy en newBrach vamos a guardar los cambios push 
+git status
+git branch
+git branch -d // nombre de la rama
+git checkout -b 
+git push -u origin //nombre dela rama
+git push -u origin --delete // nombre de la rama
