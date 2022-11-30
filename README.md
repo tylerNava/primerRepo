@@ -28,3 +28,8 @@
  -  git push origin --delete ramaA # para eliminarlo remotamente en caso que ya se halla subido a la web
 
   - git checkout ramaA # para moverse entre ramas
+
+
+
+. para subir imagenes se hace de esta manera 
+assets/logo.png
