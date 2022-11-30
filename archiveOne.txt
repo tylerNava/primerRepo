@@ -5,3 +5,5 @@ git branch -d // nombre de la rama
 git checkout -b 
 git push -u origin //nombre dela rama
 git push -u origin --delete // nombre de la rama
+git rm --cached //name archive to delete
+git rm -r --cached // name_directory borra todo el directorio
