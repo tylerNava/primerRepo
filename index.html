@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trabajando con git</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
     <style>
         html{
             background-color: black;
             color: white;
+            font-family: barlow;
         }
         img,
         video{
@@ -17,6 +21,8 @@
         }
         .header{
             /* background-color: red; */
+            display: flex;
+            justify-content: space-between;
         }
         .header-logo{
             /* background-color: aqua; */
@@ -30,30 +36,79 @@
             justify-content: center;
             align-items: center;
         }
+        .headerNav{
+            width: 50%;
+            display: flex;
+            /* justify-content: space-between; */
+
+        }
+        .headerUl{
+            /* background-color: #B28E6A; */
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+        .headerUl a{
+            color: white;
+            text-decoration: none;
+        }
+        .headerUl li{
+            /* background-color: rebeccapurple; */
+            /* border: solid 2px aqua; */
+            width: 50%;
+            height: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: box-shadow 400ms ease;
+
+        }
+
+        .headerUl li:hover
+        {
+            /* background-color: red; */
+           
+            /* transform: scale(1.1); */
+            /* width: 15%; */
+            /* height: 70%; */
+            box-shadow: inset 0 0 9px 2px white;
+            cursor: pointer;
+        }
+        .headerUl li:hover > a{
+            color: gold;
+        }
         .card{
             background-color: #B28E6A;
             width: 30vw;
             height: 70vh;
             border-radius: 1rem;
             overflow: hidden;
+            transition: box-shadow 500ms ease ,transform 600ms ease-in-out ;
+
         }
         .card:hover {
             /* height: 50%; */
             box-shadow: 0 0 1px 2px white,
                         0 0 12px 6px white;
-            transform: skewX(2deg);
+            transform: skewX(2deg); 
         }
         .cardImage{
             background-color: aqua;
             width: 100%;
             height: 100%;
             overflow: hidden;
+            transition: height 300ms ease-out 500ms ;
+
             /* object-fit: cover; */
 
         }
         .card:hover .cardImage {
             height: 40%;
             /* scale: 1.2; */
+
         }
         .cardImage img{
             width: 100%;
@@ -63,6 +118,7 @@
             object-position: center;
 
         }
+        
     </style>
 </head>
 <body>
@@ -70,7 +126,13 @@
         <div class="header-logo">
             <img src="assets/GroupOmar.svg" alt="my_logo">
         </div>
-        <nav></nav>
+        <nav class="headerNav">
+            <ul class="headerUl">
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
 
     </header>
     <!-- <h2>estamos trabajando con git y github 😎</h2> -->
@@ -80,6 +142,9 @@
             <div class="cardImage">
                 <img src="assets/01womanHarley.jpg" alt="img_woman">
 
+            </div>
+            <div class="cardInfor">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem culpa consequuntur dolorum labore dolorem laborum, dolor aperiam impedit omnis cupiditate corrupti modi placeat ea officia pariatur praesentium inventore unde!
             </div>
             
         </div>
