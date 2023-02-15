@@ -4,151 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trabajando con git</title>
+    <title>OmarWeb</title>
     
+    <link rel="shortcut icon" href="/assets/o.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-        html{
-            background-color: black;
-            color: white;
-            font-family: barlow;
-        }
-        img,
-        video{
-            max-width: 100%;
-            height: auto;
-        }
-        .header{
-            /* background-color: red; */
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-logo{
-            /* background-color: aqua; */
-            /* width: 5%;    */
-        }
-        .sections{
-            /* background-color: rebeccapurple; */
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .headerNav{
-            width: 50%;
-            display: flex;
-            /* justify-content: space-between; */
-
-        }
-        .headerUl{
-            /* background-color: #B28E6A; */
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
-        }
-        .headerUl a{
-            color: white;
-            text-decoration: none;
-        }
-        .headerUl li{
-            /* background-color: rebeccapurple; */
-            /* border: solid 2px aqua; */
-            width: 50%;
-            height: 100%;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: box-shadow 400ms ease;
-
-        }
-
-        .headerUl li:hover
-        {
-            /* background-color: red; */
-           
-            /* transform: scale(1.1); */
-            /* width: 15%; */
-            /* height: 70%; */
-            box-shadow: inset 0 0 9px 2px white;
-            cursor: pointer;
-        }
-        .headerUl li:hover > a{
-            color: gold;
-        }
-        .card{
-            background-color: #B28E6A;
-            width: 30vw;
-            height: 70vh;
-            border-radius: 1rem;
-            overflow: hidden;
-            transition: box-shadow 500ms ease ,transform 600ms ease-in-out ;
-
-        }
-        .card:hover {
-            /* height: 50%; */
-            box-shadow: 0 0 1px 2px white,
-                        0 0 12px 6px white;
-            transform: skewX(2deg); 
-        }
-        .cardImage{
-            background-color: aqua;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            transition: height 300ms ease-out 500ms ;
-
-            /* object-fit: cover; */
-
-        }
-        .card:hover .cardImage {
-            height: 40%;
-            /* scale: 1.2; */
-
-        }
-        .cardImage img{
-            width: 100%;
-            height: 100%;
-            opacity: 1;
-            object-fit: cover;
-            object-position: center;
-
-        }
-        
+      
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-logo">
-            <img src="assets/GroupOmar.svg" alt="my_logo">
+            <img src="assets/Group Omar 150x50.svg" alt="my_logo">
         </div>
         <nav class="headerNav">
             <ul class="headerUl">
-                <li><a href="#">Sign in</a></li>
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#" class="signIn">
+                    <i class="fa-solid fa-right-to-bracket"> </i>Sign in</a></li>
+                <li class="signUp"><a href="#" >
+                    <i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                <li><a href="#">
+                    <i class="fa-regular fa-address-card"></i>About</a></li>
             </ul>
         </nav>
 
     </header>
-    <!-- <h2>estamos trabajando con git y github 😎</h2> -->
+    <aside class="menuSections ">
+        <div class="asideMenu-User">
+            <div class="user-img">
+                <img src="/assets/monaChinaUser.jpg" alt="userImg">
+            </div>
+
+
+            <!-- se puede usar el nav  -->
+            <div class="user-icons">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                    <li><a href=""><i class="fa-solid fa-circle-question"></i>About</a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+                </ul>
+
+            </div>
+            
+            <div class="contendMenuh5">
+                <h5>menu of sections</h5>
     
-    <section class="sections sectionOne">
+            </div>
+        </div>
+        <div class="contentMenuAside">
+            <div class="contentMenuAside-close"></div>
+            <a href="#section1">section1</a>
+            <a href="#sectionJs">section de JS</a>
+            <a href="#sectionGit">section de GIT</a>
+            <a href="#sectionGit">section de Sql</a>
+            <!-- <div class="contentMenuAside-js">
+            </div>
+            <div class="contentMenuAside-Git">
+            </div>
+            <div class="contentMenuAside-Sql">
+            </div> -->
+            <p>min 18:56 para cuando escribes codigo en js aparesca el html y sea mas facil</p>
+
+        </div>
+    </aside>
+    
+    <div class="btnaside ">
+        <div class="btnaside-lines"></div>
+        <div class="btnaside-lines"></div>
+        <div class="btnaside-lines"></div>
+    </div>
+    <!-- <h2>estamos trabajando con git y github 😎</h2> -->
+    <div class="menuSignup ">
+        <div class="menuSigupClose">X</div>
+        <div class="menuSigup-inside">
+            <div class="menuSigupImg"></div>
+            <form >
+                <h2><i class="fa-solid fa-person-harassing"></i>signup</h2>
+                <label for="">nickname
+                    <input type="text" required>
+                </label>
+                <label for="">email
+                    <input type="email" required>
+                </label>
+                <label for="">password
+                    <input type="password" required>
+                </label>
+
+                <div class="progressBar-gray">
+                    <div class="progressBar-green"> 
+                        <span>100%</span>
+                        <i class="fa-solid fa-people-pulling"></i>
+                    </div>
+
+                </div>
+                <label for="">
+                    <input type="submit" value="Join ">
+                </label>
+    
+            </form>
+    
+        </div>
+    </div>
+    <div class="notifications">
+        <p>falta el diplay flex para que apararesca</p>
+        <h4>notification_system</h4>
+        <p>text_here</p>
+
+    </div>
+    <div class="menuSignin"></div>
+    <div class="clockfollowed">
+        
+    </div>
+    <div class="btnreverse">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <section class="sections sectionOne" id="section1">
         <div class="card">
             <div class="cardImage">
                 <img src="assets/01womanHarley.jpg" alt="img_woman">
 
             </div>
             <div class="cardInfor">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem culpa consequuntur dolorum labore dolorem laborum, dolor aperiam impedit omnis cupiditate corrupti modi placeat ea officia pariatur praesentium inventore unde!
+                <div class="cardInfor-name">
+                    <div class="name">
+                        <span class="textGray">Name</span>
+                        <h3>T.N.Omar</h3>
+                    </div>
+                    <div class="country">
+                        <span class="textGray">country</span>
+                        <h3><span  class="countryColorG">Me</span><span >xi</span><span class="countryColorR">co</span> </h3>
+                    </div>
+                </div>
+                <div class="cardInfor-socialmedia">
+                    <div class="socialmedia-github">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="socialmedia-facebook">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="socialmedia-twitter">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="socialmedia-youtube">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="socialmedia-instagram">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             
         </div>
     </section>
+    <section class="sections sectionsTwo"> 
+        <div class="contentLineas">
+
+            <div class="lineasMinalistName">
+                <h5>first mistake desktop first </h5>
+                <br>
+                <h2>Bienvenid@s!!!</h2>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <!-- <input type="datetime" name="clocktime" id="">
+        <input type="time" name="time" id="">
+        <input type="image" name="img" id="">
+        <input type="file" name="img" id="">
+        <input type="datetime-local" name="img" id=""> -->
+    </section>
+    <section>
+        <h5>usar los inputs</h5>
+        <h5>follow clock interfaze</h5>
+        <h5>btn to top</h5>
+        <h5>btn hamburguer</h5>
+        <h5>img slider</h5>
+        <h5>form signup</h5>
+        <h5>form signin</h5>
+        <h5>notification System</h5>
+        <h5>tarjetas de presentacion </h5>
+
+    </section>
+    <section class="sections">
+        <div class="gallery">
+            <img src="/assets/bg00.png" alt="imgs">
+            <img src="/assets/01womanHarley.jpg" alt="imgs">
+            <img src="/assets/00peopleMarvel.jpg" alt="imgs">
+            <img src="/assets/bg02.png" alt="imgs">
+        </div>
+
+    </section>
+    <section class="sections" id="sectionAll">
+        <div class="containerBoxtarjet">
+            <h3></h3>
+            <a class="tarjetInf" href="#sectionJs">
+            <div >
+                <div class="tarjetInf-title">
+                    <h3>js</h3>
+                    <i class="fa-brands fa-js"></i>                    
+                </div>
+
+            </div>
+        </a>
+        <a class="tarjetInf" href="#sectionGit">
+            <div>
+                <div class="tarjetInf-title">
+                <h3>git</h3>
+                <i class="fa-brands fa-git-alt"></i>
+                </div>
+            </div>
+        </a>
+        <a class="tarjetInf" href="#sectionSql">
+            <div >
+                <div class="tarjetInf-title">
+                <h3>sql</h3>
+                <p>incoming soon</p>
+                <img src="/assets/vectors/sqlVector.svg" alt="imgvector   ">
+                <span>
+                </span>
+                </div>
+
+            </div>
+        </a>
+
+        </div>
+
+    </section>
+    <section class="sections " id="sectionJs">
+        <a href="#sectionAll">
+            <p><span><i class="fa-solid fa-arrow-up"></i></span> section de JS <span><i class="fa-solid fa-arrow-up"></i></span></p>
+
+        </a>
+    </section>
+    <section class="sections " id="sectionGit">
+        <a href="#sectionAll">
+            <p><abbr title="go Back"> <span><i class="fa-solid fa-arrow-up"></i></span> section de GIT <span><i class="fa-solid fa-arrow-up"></i></span></abbr></p>
+
+        </a>
+    </section>
+
     <script src="/main.js" type="module"></script>
 </body>
 </html>

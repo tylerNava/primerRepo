@@ -20,8 +20,6 @@
 - 1 git checkout -b ramaA(nombreAcolocar)
  
   - git branch # cuantas ramas existe
-  
- - git branch -D (ramaA)  # elimina el la rama  FORZADO
 
  - git branch -d (ramaA)  # elimina el la rama  NO forzado
 
