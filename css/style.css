@@ -1156,14 +1156,36 @@ clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100
     html{
         background-color: rgba(0, 0, 0, 0.682);
     }
+    .card{
+        background-color: #222;
+        width: 80%;
+        height: 70vh;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: box-shadow 500ms ease ,transform 600ms ease-in-out ;
     
+    }
+    .card:focus {
+        /* height: 50%; */
+        box-shadow: 0 0 1px 2px white,
+                    0 0 12px 6px white;
+        transform: translateX(1px); 
+    }
     .containerBoxtarjet{
-        background-color: green;
+        /* background-color: green; */
         display: flex;
         width: 100%;
         justify-content: space-around;
         flex-direction: column;
         padding: 1rem;
+    
+    }
+    .cardInfor-socialmedia  div[class*="socialmedia"]:hover{
+        transition: transform 400ms ease;
+        /* border: 2px solid red; */
+        transform: translateY(0rem);
+    
+    
     
     }
     
