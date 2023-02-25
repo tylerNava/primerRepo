@@ -16,6 +16,7 @@
 -vamos a crear varios branch (ramas) para moverse entre ellos los que sean necesarios y claro los pasos a seguir por cada uno de ellos  comenzamos.
 ******************
 - (ramaA) es un ejemplo de los nombres.
+
 - para crear ramas 
 - 1 git checkout -b ramaA(nombreAcolocar)
  
