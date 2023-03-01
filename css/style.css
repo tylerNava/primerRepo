@@ -1120,7 +1120,7 @@ a{
 
 }
 .todolistCard-items{
-    background-color: gray;
+    background-color: rgb(84, 84, 84);
 
     width: 2%;
     height: 100%;
@@ -1128,6 +1128,12 @@ a{
     right: 0;
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
+    
+    padding: .3rem;
+    overflow: hidden;
+    transition: width 300ms linear;
+
+
     /* display: ; */
     /* visibility: hidden; */
     /* background-color: red; */
@@ -1145,18 +1151,45 @@ a{
     /* align-items: center; */
 }
 .todolistCard-items:hover{
+    visibility: visible;
+    /* background-color: firebrick; */
     width: 20%;
     height: 100%;
-    visibility: visible;
-    /* display: inline-flex; */
-    /* flex-direction: column; */
-
-    /* cursor: pointer; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    cursor: pointer;
 
 }
-
+.itemIcon i{
+    display: flex;
+    margin-right: .3rem;
+}
 .todolistCard-items:hover *{
     visibility: visible;
+    display: flex;
+
+
+}
+.todolistCard-iputcheck {
+    /* background-color: green; */
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* visibility: hidden; */
+}
+.todolistCard-iputcheck:hover{
+    /* visibility: hidden; */
+    background-color: red;
+    z-index: -1;
+    /* width: 100px;
+    height: 100px; */
+    /* border-radius: 50%; */
+    
 }
 .gallery{
     /* background-color: rebeccapurple; */
