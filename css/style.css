@@ -1431,11 +1431,6 @@ clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100
     margin-top: 1.5rem;
     padding: 1rem;
     cursor: pointer;
-
-    /* display: inline-flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .box{
     /* background-color: red; */
@@ -1511,6 +1506,41 @@ clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100
     transform: rotateZ(180deg);
     /* text-align: center; */
 }
+.articlejs-content{
+    display: none;
+}
+.is-active-articlejs{
+    /* background-color: burlywood; */
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding:7px;
+    /* flex-direction: column; */
+}
+.contentjs-dom{
+    /* background-color: blueviolet; */
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw 1vh;
+
+    /* flex-direction: column; */
+    /* margin: 1rem; */
+}
+.js-domSections{
+    /* width: 30%; */
+    height: 10%;
+    color: gold;
+    /* border: 1px solid white; */
+    /* margin: 1rem; */
+}
+
+
 
 .footer{
     /* background-color: rebeccapurple; */
