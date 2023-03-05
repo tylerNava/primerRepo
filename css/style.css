@@ -55,7 +55,7 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 1rem; */
+    padding: 1.5rem;
     overflow: hidden;
 }
 .headerNav{
