@@ -1511,9 +1511,9 @@ clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100
 }
 .is-active-articlejs{
     /* background-color: burlywood; */
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -1525,21 +1525,85 @@ clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100
     width: 100%;
 
     height: 100%;
-    display: flex;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     gap: 1vw 1vh;
+
+
+    /* border:solid 2pz  green; */
 
     /* flex-direction: column; */
     /* margin: 1rem; */
 }
 .js-domSections{
-    /* width: 30%; */
-    height: 10%;
-    color: gold;
+    width: 100%;
+    /* height: 10%; */
+    /* color: gold; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 1rem;
+    overflow: hidden;
+
+
     /* border: 1px solid white; */
     /* margin: 1rem; */
 }
+.js-domSections::before{
+    background-color: white;
+    content: "";
+    width: 5%;
+    height: 1%;
+    position: absolute;
+    left: .5vh;
+    transition: transform 300ms linear;
+    /* color: gold; */
 
+    
+}
+@keyframes aftersectionsjs {
+    100%{
+        width:100%;
+        height: 100%;
+        opacity: 1;
+        transform: scale(1,1.2);
+    }
+    
+}
+.js-domSections:hover:before{
+    background-color: white;
+    /* content: ""; */
+    width: 59%;
+    height: 4%;
+    box-shadow: 0 0 13px 2px white;
+    position: absolute;
+    left: .5vh;
+    transform: translateX(500px);
+    /* color: gold; */
+}
+.js-domSections:hover::after{
+    /* background-color: grey; */
+    content: "";
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    left: .5vh;
+    opacity: 0;
+    box-shadow: inset 0 0 6px 2px white;
+
+    /* transition: all 1s linear 1s; */
+    animation: aftersectionsjs 300ms ease 300ms forwards;
+
+    /* color: gold; */
+}
+.js-domSections:hover{
+    color: gold;
+    /* box-shadow: inset 0 0 4px 2px white; */
+}
 
 
 .footer{
